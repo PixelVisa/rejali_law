@@ -1,7 +1,94 @@
  <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="{{relative}}/assets/js/jquery.js"></script>      
+    <script src="{{relative}}/assets/js/bootstrap.min.js"></script> 
+
+    <script src="{{relative}}/assets/js/owl.carousel.js"></script>
+
+        <!-- jQuery REVOLUTION Slider  -->
+    <script type="text/javascript" src="{{relative}}assets/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="{{relative}}assets/js/jquery.themepunch.revolution.min.js"></script>
+    
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <script type="text/javascript">
+  //<![CDATA[
+    var revapi;
+      jQuery(document).ready(function() {
+        revapi = jQuery('.fullwidthbanner').revolution(
+        {
+          delay:9000,
+          startwidth:1170,
+          startheight:600,
+          fullWidth:"on",
+          onHoverStop:"on" ,
+          touchenabled:"on"
+        });
+      }); 
+    //]]>
+  </script>
+
+  <script>
+  $(document).ready(function() {
+ 
+  $("#owl-example").owlCarousel({
+ 
+    // Most important owl features
+    items : 4,
+    itemsCustom : false,
+    itemsDesktop : [1199,4],
+    itemsDesktopSmall : [980,3],
+    itemsTablet: [768,2],
+    itemsTabletSmall: false,
+    itemsMobile : [479,1],
+    singleItem : false,
+    itemsScaleUp : false,
+});
+ 
+});
+  </script>
+
+<script>
+$.asm = {};
+$.asm.panels = 1;
+
+function sidebar(panels) {
+    $.asm.panels = panels;
+    if (panels === 1) {
+      // $('#content').removeClass('span9');
+      // $('#content').addClass('span12 no-sidebar');
+      $('#sidebar').animate({
+            left: -180,
+      });
+    } else if (panels === 2) {
+      // $('#content').removeClass('span12 no-sidebar');
+      // $('#content').addClass('span9');
+        $('#sidebar').animate({
+            left: 20,
+        });
+    $('#mapCanvas').width($('#mapCanvas').parent().width());
+    $('#mapCanvas').height($(window).height() - 50);
+    $('#sidebar').height($(window).height() - 50);
+    return google.maps.event.trigger($.asm.theMap, 'resize');
+    }
+};
+
+$('#toggleSidebar').click(function() {
+  if ($.asm.panels === 1) {
+    $('#toggleSidebar i').addClass('fa-angle-left');
+    $('#toggleSidebar i').removeClass('fa-language');
+    return sidebar(2);
+  } else {
+    $('#toggleSidebar i').removeClass('fa-angle-left');
+    $('#toggleSidebar i').addClass('fa-language');
+    return sidebar(1);
+  }
+});
+
+$(function() {
+    $.asm.theMap = new google.maps.Map(document.getElementById('mapCanvas'));
+});
+</script>
   </body>
 </html>

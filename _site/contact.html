@@ -14,8 +14,19 @@
    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/less/style.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="assets/less/settings.css" media="screen" />
+
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="assets/less/owl.carousel.css">
+ 
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="assets/less/owl.theme.css">
+
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -37,12 +48,44 @@
 
     </script>
 
+    <meta name="google-translate-customization" content="a19b7ca38efa8612-6e72e33a4ba45515-ga0398b0e1fddab98-11"></meta>
+
   </head>
+
+
+
+
+ 
+<!--  jQuery 1.7+  -->
+<script src="jquery-1.9.1.min.js"></script>
+ 
+<!-- Include js plugin -->
+<script src="assets/owl-carousel/owl.carousel.js"></script>
 
 <body>
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div id="header-wrap" >
+    <div class="heada grey-texture">
+        <div class="container">
+            <div class="pull-left">
+                <div id="google_translate_element"></div><script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'fa', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-52061428-1'}, 'google_translate_element');
+            }
+        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>
+            <div class="pull-right text-center">
+                <div class="pull-right shop-button-header content-right">
+                    <div class="white">CALL US TODAY FOR YOUR FREE CONSULTATION</div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -65,6 +108,7 @@
             </div><!--/.nav-collapse -->
         </div>
     </div>
+
 
 	<section id="contact-hero">
 	<div class="container">
@@ -113,7 +157,94 @@
  <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.js"></script>      
+    <script src="/assets/js/bootstrap.min.js"></script> 
+
+    <script src="/assets/js/owl.carousel.js"></script>
+
+        <!-- jQuery REVOLUTION Slider  -->
+    <script type="text/javascript" src="assets/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js"></script>
+    
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <script type="text/javascript">
+  //<![CDATA[
+    var revapi;
+      jQuery(document).ready(function() {
+        revapi = jQuery('.fullwidthbanner').revolution(
+        {
+          delay:9000,
+          startwidth:1170,
+          startheight:600,
+          fullWidth:"on",
+          onHoverStop:"on" ,
+          touchenabled:"on"
+        });
+      }); 
+    //]]>
+  </script>
+
+  <script>
+  $(document).ready(function() {
+ 
+  $("#owl-example").owlCarousel({
+ 
+    // Most important owl features
+    items : 4,
+    itemsCustom : false,
+    itemsDesktop : [1199,4],
+    itemsDesktopSmall : [980,3],
+    itemsTablet: [768,2],
+    itemsTabletSmall: false,
+    itemsMobile : [479,1],
+    singleItem : false,
+    itemsScaleUp : false,
+});
+ 
+});
+  </script>
+
+<script>
+$.asm = {};
+$.asm.panels = 1;
+
+function sidebar(panels) {
+    $.asm.panels = panels;
+    if (panels === 1) {
+      // $('#content').removeClass('span9');
+      // $('#content').addClass('span12 no-sidebar');
+      $('#sidebar').animate({
+            left: -180,
+      });
+    } else if (panels === 2) {
+      // $('#content').removeClass('span12 no-sidebar');
+      // $('#content').addClass('span9');
+        $('#sidebar').animate({
+            left: 20,
+        });
+    $('#mapCanvas').width($('#mapCanvas').parent().width());
+    $('#mapCanvas').height($(window).height() - 50);
+    $('#sidebar').height($(window).height() - 50);
+    return google.maps.event.trigger($.asm.theMap, 'resize');
+    }
+};
+
+$('#toggleSidebar').click(function() {
+  if ($.asm.panels === 1) {
+    $('#toggleSidebar i').addClass('fa-angle-left');
+    $('#toggleSidebar i').removeClass('fa-language');
+    return sidebar(2);
+  } else {
+    $('#toggleSidebar i').removeClass('fa-angle-left');
+    $('#toggleSidebar i').addClass('fa-language');
+    return sidebar(1);
+  }
+});
+
+$(function() {
+    $.asm.theMap = new google.maps.Map(document.getElementById('mapCanvas'));
+});
+</script>
   </body>
 </html>

@@ -2,39 +2,91 @@
 layout: default
 ---
 
-<section id="home-hero">
+<!-- <section id="home-hero">
+	<div class="container">
+		<div class="title">
+			<h1>REJALI LAW FIRM</h1>
+		</div>
+	</div>
+</section> -->
+<!-- REVOLUTION SLIDER -->
+<div class="hidden-xs">
+        <div class="fullwidthbanner-container">
+        	<div class="fullwidthbanner">
+		<ul>
+		<!-- Slide 1 -->
+			<li data-transition="slideright">
+				<img src="{{relative}}/assets/img/index.jpg" alt="" />
+				
+				<!-- Caption -->
+				<div class="caption sfb" data-x="center" data-y="350" data-speed="1100" data-start="1500" data-easing="easeOutExpo">
+					<h1>WELCOME TO THE REJALI LAW FIRM</h1>                
+				</div>
+			</li>
+			
+			<!-- Slide 2 -->
+				<li data-transition="slideleft">
+				<img src="http://www.globalcourts.edu.au/wp-content/uploads/2011/03/Global-Courts-Image.jpg" alt="" />
+					
+				<!-- Caption -->
+				<div class="caption sfb stb rev-left" data-x="left" data-y="430" data-speed="1100" data-start="1500" data-easing="easeOutExpo">
+					<h1>INTERNATIONAL LAW</h1>                    
+				</div>
+			</li>
+			
+			<!-- Slide 3 -->
+				<li data-transition="slideleft" >
+				<img src="{{relative}}/assets/img/index.jpg" alt="" />
+
+				<!-- Caption -->	
+				<div class="caption sfb rev-left" data-x="left" data-y="370" data-speed="800" data-start="1900" data-easing="easeOutExpo">
+					
+				</div>	
+			</li>
+			</ul>
+			<div class="tp-bannertimer tp-bottom"></div>
+            </div>
+            			
+        </div>
+</div>
+        <!-- // END REVOLUTION SLIDER -->
+
+        <!-- MOBILE BANNER -->
+<div class="visible-xs">
+	<section id="home-hero">
 	<div class="container">
 		<div class="title">
 			<h1>REJALI LAW FIRM</h1>
 		</div>
 	</div>
 </section>
+</div>
+<!-- END MOBILE BANNER -->
 
 
-
-	<section id="page-message">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<h2>"in the end we must remember that no amount of rules and their enforcement will defeat those who struggle with justice on their side."</h2>
-					<p class="lead"> -Nelson Mandela</p>
-				</div>
+<section id="page-message">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<h2>"in the end we must remember that no amount of rules and their enforcement will defeat those who struggle with justice on their side."</h2>
+				<p class="lead"> -Nelson Mandela</p>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 
-	<section id="city">
-		<div class="container">
-			<div class="row">
-				{% for post in site.categories['index'] %}
-					<div class=" col-sm-4 col-xs-12">
-						<div class="statements">
-							<h3>{{ post.title }}</h3>
-							<p>{{ post.content }}</p>
-						</div>
-					</div>
-				{% endfor %}
+<section id="city">
+	<div class="container">
+		<div class="row">
+			{% for post in site.categories['index'] %}
+			<div class=" col-sm-4 col-xs-12">
+				<div class="statements">
+					<h3>{{ post.title }}</h3>
+					<p>{{ post.content }}</p>
+				</div>
 			</div>
+			{% endfor %}
+		</div>
 			<!-- <div class="row text-center">
 				<div class="col-sm-4 col-xs-12 item">
 					<a href="{{relative}}/practices.html"><img class="img-thumbnail" src="https://api.fnkr.net/testimg/325x250/333333/FFF/?text=CRIMINAL LAW"></a>
@@ -68,6 +120,24 @@ layout: default
 		</div>
 	</div> -->
 
+	<section id="associations">
+		<div class="container">
+			<div class="row">	
+				<div class="col-xs-12 text-center">
+					<h1>ASSOCIATIONS</h1>
+					<br>
+				</div>
+			</div>
+			<div id="owl-example" class="owl-carousel">
+			  <div><img class="img-responsive" src="{{ relative }}assets/img/a1.jpg"></div>
+			  <div><img class="img-responsive" src="{{ relative }}assets/img/a2.png"></div>
+			  <div><img class="img-responsive" src="{{ relative }}assets/img/a3.jpg"></div>
+			  <div><img class="img-responsive" src="{{ relative }}assets/img/a4.png"></div>
+			  <div><img class="img-responsive" src="{{ relative }}assets/img/a5.png"></div>
+			</div>
+		</div>
+	</section>
+
 	<section id="location">
 		<div class="container">
 			<div class="row">
@@ -98,6 +168,8 @@ layout: default
 		</div>
 	</section>
 
+
+
 	<section id="social">
 		<div class="container">
 			<div class="row">
@@ -109,4 +181,19 @@ layout: default
 			{% include social.html %}
 		</div>
 	</section>
+
+	<!-- <div id="lang">
+	<div id="sidebar">
+
+		<div id="sidebar-content">
+			<div id="google_translate_element"></div><script type="text/javascript">
+			function googleTranslateElementInit() {
+				new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'fa', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-52061428-1'}, 'google_translate_element');
+			}
+		</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	</div>
+	<a id="toggleSidebar" href="#" class="toggles"><i class="fa fa-language"></i></a>
+	</div> -->
+</div>
+
 

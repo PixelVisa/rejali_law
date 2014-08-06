@@ -1,4 +1,4 @@
 name: "RejaliLawFirm"
 description: "Omid Rejali Law Firm Website"
 markdown: redcarpet
-pygments: true
+highlighter: true

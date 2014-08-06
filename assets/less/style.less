@@ -58,7 +58,7 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
   font-family: @body;
 
   @media(max-width:767px){
@@ -150,7 +150,7 @@ a {
     @media(min-width:767px) {
         background: #333333;
         border-color: #DEA653;
-        height: 65px;
+        // height: 65px;
         font-size: 22px;
         @media (min-width:767px) and (max-width:992px){
           font-size: 18px;
@@ -631,3 +631,176 @@ position: relative;
 .icon-linkedin:before { content: '\e803'; } /* '' */
 .icon-skype:before { content: '\e804'; } /* '' */
 .icon-email:before { content: '\e805'; } /* '' */
+
+
+
+#content {
+    margin-left: 5px;
+}
+
+#mapCanvas img {
+    max-width: none;
+}
+
+
+
+
+.accordion-heading .accordion-toggle-small {
+    display: block;
+    padding: 4px 8px; /*8px 15px;*/
+}
+
+.accordion-inner-small {
+    padding: 4px 8px;  /*9px 15px;*/
+    border-top: 1px solid #e5e5e5;
+}
+
+.no-sidebar {
+    margin-left:0 !important;
+}
+
+#sidebar {
+    xbackground: white;
+    position: fixed;
+    top: 150px;
+    left: -180px;
+    width: 200px;
+    z-index: 1000;
+}
+
+#sidebar-content {
+    // width: 80%;
+    float: left;
+    background-color: white;
+}
+
+#toggleSidebar {
+    float: right;
+    height: 100%;
+    width: 20px;
+    // margin-top: 41px;
+}
+
+.fa-language { font-size: 32px;}
+.fa-angle-left { font-size: 32px;}
+
+#lang .fa {
+  background: #fff;
+  border: 1px solid #fff;
+  padding: 10px;
+}
+
+.bannercontainer {
+  width:100%;
+  position:relative;
+  padding:0;
+}
+ 
+.banner{
+  width:100%;
+  position:relative;
+}
+
+.fullwidthbanner-container {
+  width: 100%!important;
+  position: relative;
+  padding: 0;
+  overflow: hidden!important;
+  margin: 0px 0px;
+  h1 {
+        font-size: 6em;
+        color: #FFF;
+        text-shadow: 0px 5px 8px rgba(0,0,0,1);
+    }
+}
+.fullwidthbanner { font-family:'Lato', sans-serif!important; }
+.fullscreenvideo iframe { max-height: 600px!important; }
+.fullwidthbanner p { line-height: 24px; font-size: 14px; }
+.fullwidthbanner a {  color:#fff!important; }
+.fullwidthbanner ul { visibility: hidden; margin: 0; list-style: none; }
+.rev-text { color: #fff; margin: 40px; }
+.rev-title { margin: 0px; color: #fff;}
+.rev-left { margin-left: 20px; }
+.rev-right { margin-right: 20px; }
+.rev-title.big { font-size: 40px; line-height: 44px!important;}
+.rev-title-sub { font-size: 30px; color: #fff; letter-spacing: 3px; font-weight: 400; }
+.rev-title.bold, .rev-title2.bold {
+  font-size: 60px!important;
+  font-weight: 700!important;
+  text-transform: uppercase;
+  color: #eee;
+  letter-spacing: 6px;
+  padding: 8px 15px;
+}
+.rev-title2.bold{ text-transform: none; letter-spacing: 2px; padding: 0 0; }
+.tp-caption.bg { background: #323A45; padding: 18px 22px 22px; }
+.big_white { color: #eee; font-size: 18px!important; background: #323A45; padding: 20px!important; }
+.shadow{text-shadow: 0px 1px 1px rgba(0,0,0,0.3); } 
+
+.tp-leftarrow.default, .tp-rightarrow.default {
+  height: 48px!important;
+  width: auto!important;
+  line-height: 45px;
+  top: 50% !important;
+  padding: 0px 10px;
+  font-size: 30px;
+  color: #bbb;
+}
+.tparrows:before {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+}
+.tp-leftarrow.default:before { content: '\f060'; }
+.tp-rightarrow.default:before { content: '\f061'; }
+.tparrows:hover { opacity: 0.7; cursor:pointer; }
+.tp-loader  {
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  margin-top: -15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: url(../img/preload_img.gif) center no-repeat!important;
+  z-index:1;
+}
+.tp-bannertimer { width:100%; height:10px; background:url(../img/timer.png);position:absolute; z-index:200;top:0px;}
+.tp-bannertimer.tp-bottom { bottom:0px;height:15px; top:auto; z-index: 1000; }
+
+/**** HTML5 VIDEO****/
+.tp-caption.large_bold_title {
+  font: 75px/85px 'Lato', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 4px;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.3); 
+}
+.tp-caption.medium_text_shadow {
+  font: 25px/25px 'Lato', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-shadow: #000 0px 5px 10px;
+}
+.fullscreenvideo{ margin-top:-15px!important; } 
+
+.heada { background: #606060; 
+.white { color: #FFF;}
+}
+
+
+#google_translate_element {
+  margin-top: 3px;
+}
+
+#associations {
+  background: url('../img/background.jpg');
+}
+
+
