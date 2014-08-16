@@ -14,7 +14,7 @@
    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="{{ relative }}assets/less/style.css" rel="stylesheet">
+    <link href="{{ relative }}assets/css/style.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 
@@ -48,7 +48,18 @@
 
     </script>
 
-    <meta name="google-translate-customization" content="a19b7ca38efa8612-6e72e33a4ba45515-ga0398b0e1fddab98-11"></meta>
+<meta name="google-translate-customization" content="a19b7ca38efa8612-6e72e33a4ba45515-ga0398b0e1fddab98-11"></meta>
+
+
+    <!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//v2.zopim.com/?2LARyEfRfxViespkdD8TCRoXmI0L6vG1';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+<!--End of Zopim Live Chat Script-->
 
   </head>
 
@@ -56,42 +67,5 @@
 
  
 <!-- Include js plugin -->
-<script src="assets/owl-carousel/owl.carousel.js"></script>
+<script src="assets/js/owl.carousel.js"></script>
 
-
-<script type="text/javascript">
-    var limit = 5;
-    var url = 'http://rejalilawfirm.tumblr.com';
-    
-    $.getJSON(url+'/api/read/json?num='+limit+'&callback=?', function(data) {
-      $.each(data.posts, function(i,posts){
-        if(posts.type == 'video'){
-          displayVideoPost(posts);
-        } else if(posts.type == 'link'){
-          displayLinkPost(posts);
-        } else if(posts.type == 'regular'){
-          displayTextPost(posts);
-        }
-      });
-    });
-    
-    function displayTextPost(posts){
-      if(posts == null) return;
-      $('#tumblrfeed').append('<div class="posts"><h1>'+posts['regular-title']+"</h1>");
-      $('#tumblrfeed').append(posts['regular-body']+'</div>');
-    }
-    
-    function displayLinkPost(posts){
-      if(posts == null) return;
-      $('#tumblrfeed').append('<div class="posts"><h1>'+posts['link-text']+"</h1>");
-      $('#tumblrfeed').append(posts['link-url']);
-      $('#tumblrfeed').append(posts['link-description']+'</div>');
-    }
-    
-    function displayVideoPost(posts){
-      if(posts == null) return;
-      $('#tumblrfeed').append('<div class="posts"><h1>'+posts['video-caption']+"</h1>");
-      $('#tumblrfeed').append(posts['video-player-250']+'</div>');
-    }
-    
-  </script>

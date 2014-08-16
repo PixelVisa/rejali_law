@@ -2,68 +2,55 @@
 layout: default
 ---
 
-<!-- <section id="home-hero">
+<section id="home-hero">
 	<div class="container">
 		<div class="title">
-			<h1>REJALI LAW FIRM</h1>
+			<h1>WELCOME TO THE REJALI LAW FIRM</h1>
 		</div>
-	</div>
-</section> -->
-<!-- REVOLUTION SLIDER -->
-<div class="hidden-xs">
-        <div class="fullwidthbanner-container">
-        	<div class="fullwidthbanner">
-		<ul>
-		<!-- Slide 1 -->
-			<li data-transition="slideright">
-				<img src="{{relative}}/assets/img/index.jpg" alt="" />
-				
-				<!-- Caption -->
-				<div class="caption sfb" data-x="center" data-y="350" data-speed="1100" data-start="1500" data-easing="easeOutExpo">
-					<h1>WELCOME TO THE REJALI LAW FIRM</h1>                
-				</div>
-			</li>
-			
-			<!-- Slide 2 -->
-				<li data-transition="slideleft">
-				<img src="http://www.globalcourts.edu.au/wp-content/uploads/2011/03/Global-Courts-Image.jpg" alt="" />
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-8">
+				<div class="block text-center">
+				<img class="img-thumbnail" src="{{ relative}}/assets/img/logo.png">
+					<ul class="content">
+						<li>CALL OR CHAT FOR A FREE CONSULTATION</li>
+						<li class="numba">858.844.4REJALI</li>
+					</ul>
 					
-				<!-- Caption -->
-				<div class="caption sfb stb rev-left" data-x="left" data-y="430" data-speed="1100" data-start="1500" data-easing="easeOutExpo">
-					<h1>INTERNATIONAL LAW</h1>                    
 				</div>
-			</li>
-			
-			<!-- Slide 3 -->
-				<li data-transition="slideleft" >
-				<img src="{{relative}}/assets/img/index.jpg" alt="" />
-
-				<!-- Caption -->	
-				<div class="caption sfb rev-left" data-x="left" data-y="370" data-speed="800" data-start="1900" data-easing="easeOutExpo">
-					
-				</div>	
-			</li>
-			</ul>
-			<div class="tp-bannertimer tp-bottom"></div>
-            </div>
-            			
-        </div>
-</div>
-        <!-- // END REVOLUTION SLIDER -->
-
-        <!-- MOBILE BANNER -->
-<div class="visible-xs">
-	<section id="home-hero">
-	<div class="container">
-		<div class="title">
-			<h1>REJALI LAW FIRM</h1>
+			</div>
 		</div>
 	</div>
 </section>
+<div id="contact-1">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h2>855.844.4REJALI / INFO@REJALILAWFIRM.COM</h2>
+			</div>
+		</div>
+	</div>
 </div>
-<!-- END MOBILE BANNER -->
 
-
+<section id="sdlaw">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<h2>SAN DIEGO LAW FIM</h2>
+				<h5>EFFECTIVE LAW PRACTICES FOR YOU</h5>
+			</div>
+			<div class="col-xs-12 text-center">
+				<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<a href="#" class="btn btn-default btn-warning text-center">Come See Us <span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>
+		</div>
+	</div>
+</section>
 <section id="page-message">
 	<div class="container">
 		<div class="row">
@@ -74,55 +61,7 @@ layout: default
 		</div>
 	</div>
 </section>
-
-	
-
-<section id="city">
-	<div class="container">
-		<div class="row">
-			{% for post in site.categories['index'] %}
-			<div class=" col-sm-4 col-xs-12">
-				<div class="statements">
-					<h3>{{ post.title }}</h3>
-					<p>{{ post.content }}</p>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
-			<!-- <div class="row text-center">
-				<div class="col-sm-4 col-xs-12 item">
-					<a href="{{relative}}/practices.html"><img class="img-thumbnail" src="https://api.fnkr.net/testimg/325x250/333333/FFF/?text=CRIMINAL LAW"></a>
-				</div>
-				<div class="col-sm-4 col-xs-12 item">
-					<a href="{{relative}}/practices.html"><img class="img-thumbnail" src="https://api.fnkr.net/testimg/325x250/333333/FFF/?text=IMMIGRATION"></a>
-				</div>
-				<div class="col-sm-4 col-xs-12 item">
-					<a href="{{relative}}/practices.html"><img class="img-thumbnail" src="https://api.fnkr.net/testimg/325x250/333333/FFF/?text=INTERNATIONAL"></a>
-				</div>
-			</div> -->
-		</div>
-	</section>
-
-	<!-- <div class="container">
-		<div id="mission-statement">
-			<div class="row">
-				{% for post in site.categories['index'] %}
-				<div class="col-sm-4">
-					<div class="row">
-					<div class="col-xs-12">
-							<h3>{{ post.title }}</h3>
-							<p class="lead">Our Mission Is Simple:</p>
-							<p>{{ post.content }}</p>
-						</div>
-					</div>
-				</div>
-				{% endfor %}
-
-			</div>
-		</div>
-	</div> -->
-
-	<section id="associations">
+<section id="associations">
 		<div class="container">
 			<div class="row">	
 				<div class="col-xs-12 text-center">
@@ -139,6 +78,29 @@ layout: default
 			</div>
 		</div>
 	</section>
+
+	
+<section id="city">
+	<div class="container">
+		<div class="row">
+			{% for post in site.categories['index'] %}
+			<div class=" col-sm-4 col-xs-12">
+				<div class="statements">
+					<h3>{{ post.title }}</h3>
+					<p>{{ post.content }}</p>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		</div>
+	</section>
+
+
+
+	
+
+
+	
 
 	<section id="location">
 		<div class="container">

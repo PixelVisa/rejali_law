@@ -14,7 +14,7 @@
    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="assets/less/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 
@@ -48,7 +48,18 @@
 
     </script>
 
-    <meta name="google-translate-customization" content="a19b7ca38efa8612-6e72e33a4ba45515-ga0398b0e1fddab98-11"></meta>
+<meta name="google-translate-customization" content="a19b7ca38efa8612-6e72e33a4ba45515-ga0398b0e1fddab98-11"></meta>
+
+
+    <!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//v2.zopim.com/?2LARyEfRfxViespkdD8TCRoXmI0L6vG1';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+<!--End of Zopim Live Chat Script-->
 
   </head>
 
@@ -56,93 +67,61 @@
 
  
 <!-- Include js plugin -->
-<script src="assets/owl-carousel/owl.carousel.js"></script>
+<script src="assets/js/owl.carousel.js"></script>
 
-
-<script type="text/javascript">
-    var limit = 5;
-    var url = 'http://rejalilawfirm.tumblr.com';
-    
-    $.getJSON(url+'/api/read/json?num='+limit+'&callback=?', function(data) {
-      $.each(data.posts, function(i,posts){
-        if(posts.type == 'video'){
-          displayVideoPost(posts);
-        } else if(posts.type == 'link'){
-          displayLinkPost(posts);
-        } else if(posts.type == 'regular'){
-          displayTextPost(posts);
-        }
-      });
-    });
-    
-    function displayTextPost(posts){
-      if(posts == null) return;
-      $('#tumblrfeed').append('<div class="posts"><h1>'+posts['regular-title']+"</h1>");
-      $('#tumblrfeed').append(posts['regular-body']+'</div>');
-    }
-    
-    function displayLinkPost(posts){
-      if(posts == null) return;
-      $('#tumblrfeed').append('<div class="posts"><h1>'+posts['link-text']+"</h1>");
-      $('#tumblrfeed').append(posts['link-url']);
-      $('#tumblrfeed').append(posts['link-description']+'</div>');
-    }
-    
-    function displayVideoPost(posts){
-      if(posts == null) return;
-      $('#tumblrfeed').append('<div class="posts"><h1>'+posts['video-caption']+"</h1>");
-      $('#tumblrfeed').append(posts['video-player-250']+'</div>');
-    }
-    
-  </script>
 
 
 <body>
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div id="header-wrap" >
-    <div class="heada grey-texture">
-        <div class="container">
-            <div class="pull-left">
-                <div id="google_translate_element"></div><script type="text/javascript">
-            function googleTranslateElementInit() {
-                new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'fa', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-52061428-1'}, 'google_translate_element');
-            }
-        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    </div>
-            <div class="text-center">
-                <div class="pull-right">
-                    <div class="white"><span class="white">(844)-4REJALI</span>  CALL US TODAY FOR YOUR FREE CONSULTATION!</div>
-                </div>
+        <div id="header-wrap" >
+            <div class="heada grey-texture">
+                <div class="container">
+                    <div class="pull-left">
+                        <div id="google_translate_element"></div>
+                        <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'es,fa', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-52061428-1'}, 'google_translate_element');
+                        }
+                        </script>
+                        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    </div>
+                
+                    <div class="col-md-5 col-sm-3 col-xs-4 text-right white">
+                        (844)-4REJALI
+                    </div>
+                    <div class="col-md-5 col-sm-6 col-xs-4 text-right white">
+                        CALL US TODAY FOR YOUR FREE CONSULTATION!
+                    </div>
+                
+                <div class="clearfix"></div>
             </div>
-            <div class="clearfix"></div>
         </div>
+    </div>
+
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar-brand" href="/"><img class="img-responsive" src="/assets/img/logo.png"></a> -->
+        </div>
+        <div class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="profile.html">Attorney Profile</a></li>
+                <li><a href="practices.html">Practice Areas</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </div><!--/.nav-collapse -->
     </div>
 </div>
-
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/"><img class="img-responsive" src="/assets/img/logo.png"></a>
-            </div>
-            <div class="collapse navbar-collapse navbar-right">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="profile.html">Attorney Profile</a></li>
-                    <li><a href="practices.html">Practice Areas</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-
-                </ul>
-            </div><!--/.nav-collapse -->
-        </div>
-    </div>
 
 <div class="page-wrapper">
 
@@ -203,8 +182,6 @@
 
 	
 </div>
-
-<script type='text/javascript'>(function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://widget.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({ c: '27945b86-660a-4d97-b271-ca1482d59864', f: true }); done = true; } }; })();</script>
 
 <div id="footer">
 	<div class="container">
