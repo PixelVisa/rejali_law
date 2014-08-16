@@ -214,6 +214,13 @@ a:hover {
   padding: 0px;
   height: 65px;
   background: #000;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: #000;
 }
 /* PAGE SETTINGS
 -------------------------------------------------- */
@@ -927,6 +934,9 @@ a:hover {
 .heada {
   background: #606060;
   padding: 2px;
+}
+.heada p {
+  margin-bottom: 0px;
 }
 .heada .white {
   color: #FFF;
