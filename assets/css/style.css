@@ -36,7 +36,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: #f3f3f3;
 }
-@media (max-width: 767px) {
+@media (max-width: 767px) and (min-width: 400px) {
   body {
     margin-bottom: 70px;
   }
@@ -124,6 +124,7 @@ section {
 }
 ul {
   list-style-type: none;
+  padding-left: 0px;
 }
 a {
   color: #DEA653;
@@ -135,6 +136,11 @@ a:hover {
 }
 .page-wrapper {
   padding-bottom: 60px;
+}
+@media (max-width: 767px) {
+  .page-wrapper {
+    padding-bottom: 120px;
+  }
 }
 .img-thumbnail {
   background-color: #FFF;
@@ -186,33 +192,24 @@ a:hover {
 }
 @media (max-width: 767px) {
   .navbar-default {
-    background: #333333;
     border-color: #DEA653;
     font-size: 23px;
     color: #FFF;
     text-align: center;
   }
-  .navbar-default .navbar-nav li a {
-    color: #FFF;
-  }
   .navbar-default .navbar-nav li a:hover {
     color: #DEA653;
+  }
+  .navbar-default .navbar-toggle {
+    margin-top: 15px;
   }
   .navbar-default .navbar-toggle:focus {
     background-color: #DEA653;
     border-color: #DEA653;
   }
   .navbar-default .navbar-brand {
-    font-size: 28px;
-    margin-top: 2px;
-    color: #FFF;
+    margin-top: 0px;
   }
-}
-.navbar .brand {
-  max-height: 40px;
-  overflow: visible;
-  padding-top: 0;
-  padding-bottom: 0;
 }
 .navbar-brand {
   padding: 0px;
@@ -225,6 +222,34 @@ a:hover {
 .navbar-default .navbar-brand:focus {
   color: #5e5e5e;
   background-color: #000;
+}
+.heada {
+  background: #606060;
+  padding: 2px;
+}
+.heada p {
+  margin-bottom: 0px;
+}
+@media (max-width: 400px) {
+  .heada p {
+    font-size: 14px;
+  }
+}
+.heada .white {
+  color: #FFF;
+}
+.heada span.gold {
+  color: #dea653 !important;
+}
+span.gold {
+  color: #dea653 !important;
+}
+.call {
+  font-size: 14px;
+}
+.call-mb {
+  background: #606060;
+  font-size: 14px;
 }
 /* PAGE SETTINGS
 -------------------------------------------------- */
@@ -314,7 +339,8 @@ a:hover {
 @media (max-width: 467px) {
   #home-hero h1 {
     left: 10%;
-    font-size: 4em;
+    font-size: 3em;
+    top: 60%;
   }
 }
 @media (max-width: 767px) {
@@ -330,6 +356,13 @@ a:hover {
   color: #FFF;
   text-shadow: 0px 5px 8px #000000;
 }
+@media (max-width: 400px) {
+  #page-message {
+    text-align: left !important;
+    font-size: 22px;
+    letter-spacing: 1;
+  }
+}
 #contact-1 {
   background: #FFF;
   letter-spacing: 0.25em;
@@ -337,6 +370,11 @@ a:hover {
 @media (max-width: 992px) {
   #contact-1 h2 {
     font-size: 26px;
+  }
+}
+@media (max-width: 400px) {
+  #contact-1 h2 {
+    font-size: 18px;
   }
 }
 #city {
@@ -371,6 +409,12 @@ a:hover {
   background: rgba(255, 255, 255, 0.9);
   padding: 10px;
   height: 285px;
+}
+@media (max-width: 400px) {
+  .statements {
+    height: inherit;
+    margin-bottom: 10px;
+  }
 }
 #mission-statement {
   padding-bottom: 60px;
@@ -942,22 +986,6 @@ a:hover {
 }
 .fullscreenvideo {
   margin-top: -15px !important;
-}
-.heada {
-  background: #606060;
-  padding: 2px;
-}
-.heada p {
-  margin-bottom: 0px;
-}
-.heada .white {
-  color: #FFF;
-}
-.heada span.gold {
-  color: #dea653 !important;
-}
-span.gold {
-  color: #dea653 !important;
 }
 #associations {
   background: #FFF;
