@@ -14,7 +14,7 @@
    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/less/style.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 
@@ -60,6 +60,9 @@ $.src='//v2.zopim.com/?2LARyEfRfxViespkdD8TCRoXmI0L6vG1';z.t=+new Date;$.
 type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
 </script>
 <!--End of Zopim Live Chat Script-->
+
+
+
 
   </head>
 
@@ -116,8 +119,9 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
             <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="team.html">Attorney Profiles</a></li>
+                <li><a href="team.html">TEAM Profiles</a></li>
                 <li><a href="practices.html">Practice Areas</a></li>
+                <li><a href="blog.html">BLOG</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li class="visible-xs call-mb"><p><span class="white">CALL US TODAY FOR YOUR FREE CONSULTATION!</span></p></li>
 
@@ -267,6 +271,23 @@ type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
     <script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js"></script>
     
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <script type="text/javascript">
+      $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+      </script>
 
     <script type="text/javascript">
   //<![CDATA[
