@@ -219,15 +219,17 @@ a {
 }
 
 .navbar-brand {
-  padding: 0px;
+  padding-top:25px;
   height: 65px;
-  background: #000;
+  // background: #000;
   padding-right: 15px;
   padding-left: 15px;
+  border-left: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
 }
 
 
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus { color: #5e5e5e; background-color: #000;}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus { color: #DEA653;}
 
 .heada { 
   background: #606060; padding: 2px;
@@ -486,28 +488,28 @@ a {
     p { font-size: 18px;}
     }
 
-#interview {
-  *, *:before, *:after {box-sizing:  border-box !important;}
+// #interview {
+//   *, *:before, *:after {box-sizing:  border-box !important;}
 
 
-  .row {
-   -moz-column-width: 18em;
-   -webkit-column-width: 18em;
-   -moz-column-gap: 1em;
-   -webkit-column-gap: 1em;
+//   .row {
+//    -moz-column-width: 18em;
+//    -webkit-column-width: 18em;
+//    -moz-column-gap: 1em;
+//    -webkit-column-gap: 1em;
 
-  }
+//   }
 
-  .menu-category {
-   display: inline-block;
-   margin:  0.25rem;
-   padding:  1rem;
-   width:  100%;
-  }
+//   .menu-category {
+//    display: inline-block;
+//    margin:  0.25rem;
+//    padding:  1rem;
+//    width:  100%;
+//   }
 
-  h4 {font-size: 22px;}
+//   h4 {font-size: 22px;}
 
-}
+// }
 
 #resume {
   background: #E5EDF0;
@@ -598,7 +600,7 @@ position: relative;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     color: #DEA653;
-    border: 2px solid #DEA653;
+    // border: 2px solid #DEA653;
     line-height: 0;
     font-size: 34px;
     text-transform: uppercase;
@@ -646,11 +648,11 @@ position: relative;
 
 @font-face {
   font-family: 'social';
-  src: url('../fonst/social.eot?23989298');
-  src: url('../fonts/social.eot?23989298#iefix') format('embedded-opentype'),
-       url('../fonts/social.woff?23989298') format('woff'),
-       url('../fonts/social.ttf?23989298') format('truetype'),
-       url('../fonts/social.svg?23989298#social') format('svg');
+  src: url('../fonts/social.eot?20809716');
+  src: url('../fonts/social.eot?20809716#iefix') format('embedded-opentype'),
+       url('../fonts/social.woff?20809716') format('woff'),
+       url('../fonts/social.ttf?20809716') format('truetype'),
+       url('../fonts/social.svg?20809716#social') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -660,7 +662,7 @@ position: relative;
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'social';
-    src: url('../font/social.svg?23989298#social') format('svg');
+    src: url('../font/social.svg?20809716#social') format('svg');
   }
 }
 */
@@ -696,16 +698,16 @@ position: relative;
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-facebook:before { content: '\e800'; } /* '' */
-.icon-twitter:before { content: '\e801'; } /* '' */
-.icon-googleplus:before { content: '\e802'; } /* '' */
-.icon-yelp:before { content: '\e803'; } /* '' */
-.icon-tumblr:before { content: '\e804'; } /* '' */
+.icon-avvo-logo-full-color:before { content: '\e800'; } /* '' */
+.icon-facebook:before { content: '\e801'; } /* '' */
+.icon-twitter:before { content: '\e802'; } /* '' */
+.icon-googleplus:before { content: '\e803'; } /* '' */
+.icon-yelp:before { content: '\e804'; } /* '' */
 .icon-instagram:before { content: '\e805'; } /* '' */
 .icon-linkedin:before { content: '\e806'; } /* '' */
 .icon-skype:before { content: '\e807'; } /* '' */
-.icon-email:before { content: '\e808'; } /* '' */
-
+.icon-mail:before { content: '\e808'; } /* '' */
+.icon-tumblr:before { content: '\e809'; } /* '' */
 
 
 #content {
@@ -782,7 +784,7 @@ position: relative;
   overflow: hidden!important;
   margin: 0px 0px;
   h1 {
-        font-size: 6em;
+        font-size: 4em;
         color: #FFF;
         text-shadow: 0px 5px 8px rgba(0,0,0,1);
     }
@@ -921,3 +923,157 @@ padding: 40px;
 }
 
 .tumblr_post.tumblr_video_post { display: none;}
+
+.tumblr_post.tumblr_link_post {   margin-top: 20px;
+text-align: center;
+background: #333;
+color: #FFF;
+padding: 40px;}
+
+
+.tumblr_post.tumblr_quote_post {
+
+  margin-top: 20px;
+text-align: center;
+background: #333;
+color: #FFF;
+padding: 40px;
+  
+}
+#testimonials {
+  background: #FFF;
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+#aboutpg {
+
+  #container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 2em auto;
+}
+.cols {
+    -moz-column-count:3;
+    -moz-column-gap: 3%;
+    -moz-column-width: 30%;
+    -webkit-column-count:3;
+    -webkit-column-gap: 3%;
+    -webkit-column-width: 30%;
+    column-count: 3;
+    column-gap: 3%;
+    column-width: 30%;
+}
+.box {
+    margin-bottom: 20px;
+}
+.box.one {
+    height: 320px;
+    background-color: #d77575;
+    padding: 25px;
+}
+.box.two {
+    height: 300px;
+    background-color: #dcbc4c;
+    padding: 25px;
+}
+.box.three {
+    background-color: #a3ca3b;
+    height: 400px;
+    padding: 25px;
+}
+.box.four {
+    background-color: #3daee3;
+    height: 500px;
+    padding: 25px;
+}
+.box.five {
+    background-color: #bb8ed8;
+    height: 600px;
+    padding: 25px;
+}
+.box.six {
+    background-color: #baafb1;
+    height: 200px;
+    padding: 25px;
+}
+
+
+
+}
+
+
+
+
+
+
+#aboutinfo {
+
+.masonry {
+    margin: 1.5em 0;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+}
+
+.item {
+    display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+}
+
+@media only screen and (min-width: 400px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .masonry {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .wrapper {
+        width: 1260px;
+    }
+}
+
+}
+
+
+

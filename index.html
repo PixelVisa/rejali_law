@@ -2,25 +2,8 @@
 layout: default
 ---
 
-<section id="home-hero">
-	<div class="container">
-		<div class="title">
-			<h1>WELCOME TO THE REJALI LAW FIRM</h1>
-		</div>
-		<div class="row">
-			<div class="col-sm-4 col-sm-offset-8">
-				<div class="block text-center">
-				<img class="img-thumbnail" src="{{ relative}}/assets/img/logo.png">
-					<ul class="content">
-						<li>CALL OR CHAT FOR A FREE CONSULTATION</li>
-						<li class="numba">TOLL FREE 844.4REJALI</li>
-					</ul>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+	{% include revslider.html %}
+
 <div id="contact-1">
 	<div class="container">
 		<div class="row">
@@ -45,6 +28,16 @@ layout: default
 				</p>
 				<a href="#location" class="btn btn-default btn-warning text-center">Come See Us <span class="glyphicon glyphicon-chevron-right"></span></a>
 			</div>
+			<div class="col-sm-12 hidden-xs text-center">
+			<br>
+				<iframe width="854" height="510" src="//www.youtube.com/embed/oYz3JPo9ch0" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<div class="col-xs-12 visible-xs text-center">
+			<br>
+				<iframe src="//www.youtube.com/embed/oYz3JPo9ch0" frameborder="0" allowfullscreen></iframe>
+			</div>
+
 		</div>
 	</div>
 </section>
@@ -72,6 +65,7 @@ layout: default
 			  <div><img class="img-thumbnail" src="{{ relative }}assets/img/a3.jpg"></div>
 			  <div><img class="img-thumbnail" src="{{ relative }}assets/img/a4.jpg"></div>
 			  <div><img class="img-thumbnail" src="{{ relative }}assets/img/a5.jpg"></div>
+			  <div><img class="img-thumbnail" src="{{ relative }}assets/img/a6.png"></div>
 			</div>
 		</div>
 	</section>
@@ -125,6 +119,44 @@ layout: default
 				<div class="col-sm-6">
 					<a href="https://www.google.com/maps/preview?q=8880+Rio+San+Diego+Dr,+Suite+800,+San+Diego,+CA,+92108&ie=UTF-8&hq=&hnear=0x80d95511fb073755:0x5495e05c59fafddd,8880+Rio+San+Diego+Dr+%23800,+San+Diego,+CA+92108&gl=us&ei=ixudU4WZBYyoyASsw4GoBw&ved=0CB4Q8gEwAA" target="_blank"><img class="img-thumbnail" src="{{site.url}}/assets/images/indexmap.png"></a>
 				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<h2>TESTIMONIALS</h2>
+					<br>
+				</div>
+
+				<div id="owl-demo" class="owl-carousel owl-theme">
+ 
+  					<div class="item">
+  						<blockquote>
+  							<h4>YELP</h4>
+  							<p>Omid is an honest and reliable attorney who is passionate and very well educated about the law and does everything necessary to protect his clients' rights to the fullest extent possible under the law. I would highly recommend Omid to anyone looking for an attorney. You will not be disappointed.</p>
+  							<footer>Houtan Y.</footer>
+  						</blockquote>
+  					</div>
+  					<div class="item">
+  						<blockquote>
+  							<h4>THUMBTACK</h4>
+  							<p>Omid is one of the most knowledgeable and hardworking attorneys in San Diego. His services are pretty affordable too, which helps a ton when you can't afford a lawyer who will probably drag out your case to get paid more. I had a legal matter to deal with and I spoke to several attorneys before I finally came to Omid. He was the only one that kept it real with me. Most attorneys will tell you what you want to hear, but this man tells you what you need to hear. Effective lawyer with effective results. Highly recommended if you need legal advice/representation.</p>
+  							<footer>Gavin N.</footer>
+  						</blockquote>
+  					</div>
+  					<div class="item">
+  						<blockquote>
+  							<h4>AVVO</h4>
+  							<p>Best Representation at an Affordable Price</p><p>Came to Omid for a civil litigation matter. Told him my problem and he explained to me what my options were. Kept it real and kept me informed about the status of the case. Actually, he gives you access to your case file 24/7 so you can track the progress of your case. Needlessly to say, Omid has not been the only lawyer I have needed to litigate my business matters. However, he does stand out with his representation and outstanding customer service. He even helped a family member with an immigration issue and was able to answer all of her questions and filled out all of the necessary forms. He is also a San Diego native so you can trust that he cares about the rights of fellow San Diegans.</p>
+  							<footer>Kevin</footer>
+  						</blockquote>
+  					</div>
+				</div>
+
+
 			</div>
 		</div>
 	</section>
