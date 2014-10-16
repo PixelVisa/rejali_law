@@ -1,0 +1,25 @@
+---
+layout: page
+title : Blog
+group: navigation
+weight: 5
+---
+<section id="blogs-hero">
+	<div class="container">
+		<div class="title">
+			<h1>Our Blogs</h1>
+		</div>
+	</div>
+</section>
+
+<section id="blogs">
+	<div class="container">
+		{% for post in site.categories['blogs'] %}
+				<div class="col-xs-12 blog-wraps">
+					<h2 class="text-center">{{post.title}}</h2>
+					<p>{{ post.content | truncatewords: 100 }}</p>
+                	<a href="{{post.url}}" class="btn btn-default btn-warning text-center">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+				</div>
+		{% endfor %}
+	</div>
+</section>
