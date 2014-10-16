@@ -1,27 +1,66 @@
 ---
-layout: default
+layout: page
+title : Team Profiles
+group: navigation
+weight: 3
 ---
 
-<section id="team">
+
+<section id="team-hero">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<h2 class="text-center">
+				<h1 class="text-center">
 					Meet The Team
-				</h2>
-			</div>
-		</div>
-		<br>
-		<div class="row text-center">
-			<div class="col-sm-4">
-				<a href="omid.html"><img class="img-thumbnail" src="{{site.url}}/assets/img/omid-profile.jpg"><h4>Omid Rejali</h4><p>Attorney</p></a>
-			</div>
-			<div class="col-sm-4">
-				<a href="jimmy.html"><img class="img-thumbnail" src="{{site.url}}/assets/img/jimmy.jpeg"><h4>Jimmy NGUYEN</h4><p>Law Clerk</p></a>
+				</h1>
 			</div>
 		</div>
 	</div>
 </section>
+
+<section id="team">
+	<div class="container">
+		<br>
+		<div class="row text-center hidden-xs">
+			<div class="col-sm-4">
+				<a href="jimmy.html"><img class="img-thumbnail" src="{{ relative }}/assets/themes/rejalilaw/img/team/jimmy.jpg"><h4>Jimmy Nguyen</h4><p>Law Clerk</p></a>
+				<br>
+				<a href="zahra.html"><img class="img-thumbnail" src="{{ relative }}/assets/themes/rejalilaw/img/team/mom.jpg"><h4>Nazi Rejali</h4><p>Paralegal</p></a>
+			</div>
+			<div class="col-sm-4">
+				<a href="omid.html"><img class="img-thumbnail" src="{{ relative }}/assets/themes/rejalilaw/img/team/omid.jpg"><h4>Omid Rejali</h4><p>Attorney</p></a>
+			</div>
+			<div class="col-sm-4">
+				<a href="chris.html"><img class="img-thumbnail" src="{{ relative }}/assets/themes/rejalilaw/img/team/chris.jpg"><h4>Chris Nepacena</h4><p>Law Clerk</p></a>
+				<br>
+				<img class="img-thumbnail" src="{{ relative }}/assets/themes/rejalilaw/img/team/vivek.jpg"><h4>Vivek Poola</h4><p>I.T. Support/Development</p>
+			</div>
+		</div>
+
+		<div class="visible-xs">
+			<div class="col-xs-12 text-center">
+				<a href="omid.html"><img class="img-thumbnail" src="{{ relative }}/assets/themes/rejalilaw/img/team/mobile/omid.jpg"><h4>Omid Rejali</h4><p>Attorney</p></a>
+			</div>
+			<div class="col-xs-12 text-center">
+				<a href="chris.html"><img class="img-thumbnail" src="{{ relative }}/assets/themes/rejalilaw/img/team/mobile/chris.jpg"><h4>Chris Nepacena</h4><p>Attorney</p></a>
+			</div>
+			<div class="col-xs-12 text-center">
+				<a href="jimmy.html"><img class="img-thumbnail" src="{{ relative }}/assets/themes/rejalilaw/img/team/mobile/jimmy.jpg"><h4>Jimmy Nguyen</h4><p>Attorney</p></a>
+			</div>
+			<div class="col-xs-12 text-center">
+				<a href="jimmy.html"><img class="img-thumbnail" src="{{ relative }}/assets/themes/rejalilaw/img/team/mobile/vivek.jpg"><h4>Vivek Poola</h4><p>Attorney</p></a>
+			</div>
+			<div class="col-xs-12 text-center">
+				<a href="mom.html"><img class="img-thumbnail" src="{{ relative }}/assets/themes/rejalilaw/img/team/mobile/mom.jpg"><h4>Nazi Rejali</h4><p>Paralegal</p></a>
+			</div>
+		</div>
+
+
+		</div>
+	
+	</div>
+</section>
+
 
 	<section id="location">
 		<div class="container">
@@ -37,8 +76,9 @@ layout: default
 					<hr>
 					<ul>
 						<li><h4>Phone: TOLL FREE 844.4REJALI</h4></li>
+						<li><h4>Local: (619)-887-4148</h4></li>
 						<!-- <li><h4>Weekend & Evening Phone: (619)887-4148</h4></li> -->
-						<li><h4>Fax Number: (619)274-8222</h4></li>
+						<li><h4>Fax Number: (619)-274-8222</h4></li>
 						<li><h4><a href="mailto:info@rejalilawfirm.com">Email: info@rejalilawfirm.com</a></h4></li>
 					</ul>
 					<br>
@@ -47,7 +87,7 @@ layout: default
 					<h4>8880 Rio San Diego Dr, Suite 800, San Diego, CA, 92108</h4>
 				</div>
 				<div class="col-sm-6">
-					<a href="https://www.google.com/maps/preview?q=8880+Rio+San+Diego+Dr,+Suite+800,+San+Diego,+CA,+92108&ie=UTF-8&hq=&hnear=0x80d95511fb073755:0x5495e05c59fafddd,8880+Rio+San+Diego+Dr+%23800,+San+Diego,+CA+92108&gl=us&ei=ixudU4WZBYyoyASsw4GoBw&ved=0CB4Q8gEwAA" target="_blank"><img class="img-thumbnail" src="{{site.url}}/assets/images/indexmap.png"></a>
+					<a href="https://www.google.com/maps/preview?q=8880+Rio+San+Diego+Dr,+Suite+800,+San+Diego,+CA,+92108&ie=UTF-8&hq=&hnear=0x80d95511fb073755:0x5495e05c59fafddd,8880+Rio+San+Diego+Dr+%23800,+San+Diego,+CA+92108&gl=us&ei=ixudU4WZBYyoyASsw4GoBw&ved=0CB4Q8gEwAA" target="_blank"><img class="img-thumbnail" src="{{ relative}}/assets/themes/rejalilaw/img/indexmap.png"></a>
 				</div>
 			</div>
 		</div>
@@ -63,6 +103,6 @@ layout: default
 				</div>
 			</div>
 			<br>
-			{% include social.html %}
+			{% include themes/rejalilaw/social.html %}
 		</div>
 	</section>

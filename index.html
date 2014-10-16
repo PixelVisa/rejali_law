@@ -1,192 +1,253 @@
 ---
-layout: default
+layout: page
+title : Home
+group: navigation
+weight: 1
 ---
 
-	{% include revslider.html %}
+{% include themes/rejalilaw/slider.html %}
 
 <div id="contact-1">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 col-xs-12 text-center">
-				<h2>844.4REJALI / <a href="mailto:info@rejalilawfirm.com">info@rejalilawfirm.com</a></h2>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-xs-12 text-center">
+                <h2>844.4REJALI / <a href="mailto:info@rejalilawfirm.com">info@rejalilawfirm.com</a></h2>
+            </div>
+        </div>
+    </div>
 </div>
 
 <section id="sdlaw">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 text-center">
-				<h2>SAN DIEGO LAW FIRM</h2>
-				<h5>EFFECTIVE LAW PRACTICES FOR YOU</h5>
-			</div>
-			<div class="col-xs-12 text-center">
-				<p class="text-left">REJALI LAW FIRM is a premier San Diego based firm focusing on Criminal Defense, Immigration Defense, Civil Litigation, Personal Injury, and obtaining OFAC licensing. Our attorneys will aggressively fight to obtain justice for their clients. Our values are embedded in honesty, integrity, passion, diligence and the ability to act quickly to preserve and pursue our clients’ interests.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2>SAN DIEGO LAW FIRM</h2>
+                <h5>EFFECTIVE LAW PRACTICES FOR YOU</h5>
+            </div>
+            <div class="col-xs-12 text-center">
+                <p class="text-left">REJALI LAW FIRM is a premier San Diego based firm focusing on Criminal Defense, Immigration Defense, Civil Litigation, Personal Injury, and obtaining OFAC licensing. Our attorneys will aggressively fight to obtain justice for their clients. Our values are embedded in honesty, integrity, passion, diligence and the ability to act quickly to preserve and pursue our clients’ interests.</p>
 
-				<p class="text-left">Most importantly, WE LIVE to protect our clients RIGHTS. If you have been charged with a crime, need representation with any type of immigration matter, have been injured, or feel that your rights have been trampled, please give us a call, we would love to sit down for a FREE consultation.
-				</p>
-				<a href="#location" class="btn btn-default btn-warning text-center">Come See Us <span class="glyphicon glyphicon-chevron-right"></span></a>
-			</div>
-			<div class="col-sm-12 hidden-xs text-center">
-			<br>
-				<iframe width="854" height="510" src="//www.youtube.com/embed/oYz3JPo9ch0" frameborder="0" allowfullscreen></iframe>
-			</div>
+                <p class="text-left">Most importantly, WE LIVE to protect our clients RIGHTS. If you have been charged with a crime, need representation with any type of immigration matter, have been injured, or feel that your rights have been trampled, please give us a call, we would love to sit down for a FREE consultation.
+                </p>
+                <a href="#location" class="btn btn-default btn-warning text-center">Come See Us <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <!-- <div class="col-sm-12 hidden-xs text-center">
+                <br>
+                <iframe width="854" height="510" src="//www.youtube.com/embed/oYz3JPo9ch0" frameborder="0" allowfullscreen></iframe>
+            </div>
 
-			<div class="col-xs-12 visible-xs text-center">
-			<br>
-				<iframe src="//www.youtube.com/embed/oYz3JPo9ch0" frameborder="0" allowfullscreen></iframe>
-			</div>
+            <div class="col-xs-12 visible-xs text-center">
+                <br>
+                <iframe src="//www.youtube.com/embed/oYz3JPo9ch0" frameborder="0" allowfullscreen></iframe>
+            </div> -->
 
-		</div>
-	</div>
+        </div>
+    </div>
 </section>
-<section id="page-message">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 text-center thread">
-				<h2>"in the end we must remember that no amount of rules and their enforcement will defeat those who struggle with justice on their side."</h2>
-				<p class="lead"> -Nelson Mandela</p>
-			</div>
-		</div>
-	</div>
-</section>
-<section id="associations">
-		<div class="container">
-			<div class="row">	
-				<div class="col-xs-12 text-center">
-					<h2>ASSOCIATIONS</h2>
-					<br>
-				</div>
-			</div>
-			<div id="owl-example" class="owl-carousel text-center">
-			  <div><img class="img-thumbnail" src="{{ relative }}assets/img/a1.jpg"></div>
-			  <div><img class="img-thumbnail" src="{{ relative }}assets/img/a2.jpg"></div>
-			  <div><img class="img-thumbnail" src="{{ relative }}assets/img/a3.jpg"></div>
-			  <div><img class="img-thumbnail" src="{{ relative }}assets/img/a4.jpg"></div>
-			  <div><img class="img-thumbnail" src="{{ relative }}assets/img/a5.jpg"></div>
-			  <div><img class="img-thumbnail" src="{{ relative }}assets/img/a6.png"></div>
-			</div>
-		</div>
-	</section>
 
-	
 <section id="city">
-	<div class="container">
-		<div class="row">
-			{% for post in site.categories['index'] %}
-			<div class=" col-sm-4 col-xs-12">
-				<div class="statements">
-					<h3>{{ post.title }}</h3>
-					<p>{{ post.content }}</p>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
-		</div>
-	</section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2>Practice Areas</h2>
+                <a href="practices.html" class="visible-xs visible-sm"><h5>VIEW ALL PRACTICE AREAS</h5></a>
+                <br>
+            </div>
+        </div>
+
+            <div class="row">
+            {% for post in site.categories['descriptions1'] %}
+                <div class=" col-md-4 col-sm-12 col-xs-12">
+                    <div class="statements">
+                        <h3>{{ post.title }}</h3>
+                        <p>{{ post.content }}</p>
+                        <div class="divbutton" style="display:none;">
+                            <a href="practices.html" class="btn btn-default btn-warning text-center">READ MORE <span class="glyphicon glyphicon-chevron-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+
+            <br>
+            
+            <div class="row">
+             {% for post in site.categories['descriptions2'] %}
+            <div class=" col-md-4 hidden-sm hidden-xs">
+                <div class="statements">
+                    <h3>{{ post.title }}</h3>
+                    <p>{{ post.content }}</p>
+                    <div class="divbutton" style="display:none;">
+                            <a href="practices.html" class="btn btn-default btn-warning text-center">READ MORE <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            </div>
+
+        
+           
 
 
 
-	
+    </div>
+</section>
 
-
-	
-
-	<section id="location">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<h2>LOCATION</h2>
-					<br>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-6">
-					<h3>CONTACT</h3>
-					<hr>
-					<ul>
-						<li><h4>Phone: TOLL FREE 844.4REJALI</h4></li>
-						<!-- <li><h4>Weekend & Evening Phone: (619)887-4148</h4></li> -->
-						<li><h4>Fax Number: (619)274-8222</h4></li>
-						<li><h4><a href="mailto:info@rejalilawfirm.com">Email: info@rejalilawfirm.com</a></h4></li>
-					</ul>
-					<br>
-					<h3>ADDRESS</h3>
-					<hr>
-					<h4>8880 Rio San Diego Dr, Suite 800, San Diego, CA, 92108</h4>
-				</div>
-				<div class="col-sm-6">
-					<a href="https://www.google.com/maps/preview?q=8880+Rio+San+Diego+Dr,+Suite+800,+San+Diego,+CA,+92108&ie=UTF-8&hq=&hnear=0x80d95511fb073755:0x5495e05c59fafddd,8880+Rio+San+Diego+Dr+%23800,+San+Diego,+CA+92108&gl=us&ei=ixudU4WZBYyoyASsw4GoBw&ved=0CB4Q8gEwAA" target="_blank"><img class="img-thumbnail" src="{{site.url}}/assets/images/indexmap.png"></a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="testimonials">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<h2>TESTIMONIALS</h2>
-					<br>
-				</div>
-
-				<div id="owl-demo" class="owl-carousel owl-theme">
- 
-  					<div class="item">
-  						<blockquote>
-  							<h4>YELP</h4>
-  							<p>Omid is an honest and reliable attorney who is passionate and very well educated about the law and does everything necessary to protect his clients' rights to the fullest extent possible under the law. I would highly recommend Omid to anyone looking for an attorney. You will not be disappointed.</p>
-  							<footer>Houtan Y.</footer>
-  						</blockquote>
-  					</div>
-  					<div class="item">
-  						<blockquote>
-  							<h4>THUMBTACK</h4>
-  							<p>Omid is one of the most knowledgeable and hardworking attorneys in San Diego. His services are pretty affordable too, which helps a ton when you can't afford a lawyer who will probably drag out your case to get paid more. I had a legal matter to deal with and I spoke to several attorneys before I finally came to Omid. He was the only one that kept it real with me. Most attorneys will tell you what you want to hear, but this man tells you what you need to hear. Effective lawyer with effective results. Highly recommended if you need legal advice/representation.</p>
-  							<footer>Gavin N.</footer>
-  						</blockquote>
-  					</div>
-  					<div class="item">
-  						<blockquote>
-  							<h4>AVVO</h4>
-  							<p>Best Representation at an Affordable Price</p><p>Came to Omid for a civil litigation matter. Told him my problem and he explained to me what my options were. Kept it real and kept me informed about the status of the case. Actually, he gives you access to your case file 24/7 so you can track the progress of your case. Needlessly to say, Omid has not been the only lawyer I have needed to litigate my business matters. However, he does stand out with his representation and outstanding customer service. He even helped a family member with an immigration issue and was able to answer all of her questions and filled out all of the necessary forms. He is also a San Diego native so you can trust that he cares about the rights of fellow San Diegans.</p>
-  							<footer>Kevin</footer>
-  						</blockquote>
-  					</div>
-				</div>
-
-
-			</div>
-		</div>
-	</section>
+<section id="blogs">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2>Blogs</h2>
+                <br>
+            </div>
+        </div>
+        {% for post in site.categories['blogs'] %}
+        <div class="row">
+            <div class="col-sm-12">
+                <h3><a href="{{post.url}}">{{ post.title }}</a></h3>
+                <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+                <p>{{ post.content | truncatewords: 100 }}</p>
+                <a href="{{ post.url }}">read more</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
 
 
 
-	<section id="social">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 text-center">
-					<h2>SOCIAL</h2>
-				</div>
-			</div>
-			<br>
-			{% include social.html %}
-		</div>
-	</section>
+<section id="associations">
+    <div class="container">
+        <div class="row"> 
+            <div class="col-xs-12 text-center">
+                <h2>ASSOCIATIONS</h2>
+                <br>
+            </div>
+        </div>
+        <div id="owl-example" class="owl-carousel text-center">
+            <div><img class="img-thumbnail" src="{{ relative }}assets/themes/rejalilaw/img/a1.jpg"></div>
+            <div><img class="img-thumbnail" src="{{ relative }}assets/themes/rejalilaw/img/a2.jpg"></div>
+            <div><img class="img-thumbnail" src="{{ relative }}assets/themes/rejalilaw/img/a3.jpg"></div>
+            <div><img class="img-thumbnail" src="{{ relative }}assets/themes/rejalilaw/img/a4.jpg"></div>
+            <div><img class="img-thumbnail" src="{{ relative }}assets/themes/rejalilaw/img/a5.jpg"></div>
+            <div><img class="img-thumbnail" src="{{ relative }}assets/themes/rejalilaw/img/a6.png"></div>
+        </div>
+    </div>
+</section>
 
-	<!-- <div id="lang">
-	<div id="sidebar">
 
-		<div id="sidebar-content">
-			<div id="google_translate_element"></div><script type="text/javascript">
-			function googleTranslateElementInit() {
-				new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'fa', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-52061428-1'}, 'google_translate_element');
-			}
-		</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-	</div>
-	<a id="toggleSidebar" href="#" class="toggles"><i class="fa fa-language"></i></a>
-	</div> -->
+
+
+
+
+<section id="article">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2>Thomas Jefferson School Of Law</h2>
+                <h5>Attorney Omid Rejali</h5>
+            </div>
+            <br>
+            <div class="col-sm-7 col-xs-12">
+                <p>“I opened my practice right after I passed the bar, without any hesitation or having any second thoughts,” Rejali said. At the age of 28, Rejali is eager and passionate about his diverse practice, “The firm practices in the areas of immigration, criminal defense, personal injury, civil litigation, obtaining OFAC (Office of Foreign Assets Control) licensing, bankruptcy, estate planning, tax and business litigation,” explains Rejali.</p>
+                <p class="hidden-xs">“I love the law and have a very strong passion for it. I enjoy everything about it,” Rejali said. The many obstacles Rejali has encountered, evidence the passion and dedication with which he has pursued his career. “My journey through law school was no easy task. I had to overcome many adversities from the moment I decided to enter law school.” --Thomas Jefferson School Of Law Article
+                </p>
+                <div class="text-center">
+                    <a href="http://www.tjsl.edu/news-media/2014/12447" target="_blank" class="btn btn-default btn-warning text-center">Read Full Article <span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+                <br>
+            </div>
+
+            <div class="col-sm-5 text-center">
+                <img src="http://www.tjsl.edu/sites/default/files/imagecache/page_photo_single/img_5716.jpg" class="img-thumbnail">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="page-message">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center thread">
+                <h2>"in the end we must remember that no amount of rules and their enforcement will defeat those who struggle with justice on their side."</h2>
+                <p class="lead"> -Nelson Mandela</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="location">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2>LOCATION</h2>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>CONTACT</h3>
+                <hr>
+                <ul>
+                    <li><h4>Phone: TOLL FREE 844.4REJALI</h4></li>
+                    <li><h4>Local: (619)-887-4148</h4></li>
+                    <!-- <li><h4>Weekend & Evening Phone: (619)887-4148</h4></li> -->
+                    <li><h4>Fax Number: (619)-274-8222</h4></li>
+                    <li><h4><a href="mailto:info@rejalilawfirm.com">Email: info@rejalilawfirm.com</a></h4></li>
+                </ul>
+                <br>
+                <h3>ADDRESS</h3>
+                <hr>
+                <h4>8880 Rio San Diego Dr, Suite 800, San Diego, CA, 92108</h4>
+            </div>
+            <div class="col-sm-6">
+                <a href="https://www.google.com/maps/preview?q=8880+Rio+San+Diego+Dr,+Suite+800,+San+Diego,+CA,+92108&ie=UTF-8&hq=&hnear=0x80d95511fb073755:0x5495e05c59fafddd,8880+Rio+San+Diego+Dr+%23800,+San+Diego,+CA+92108&gl=us&ei=ixudU4WZBYyoyASsw4GoBw&ved=0CB4Q8gEwAA" target="_blank"><img class="img-thumbnail" src="{{ relative}}/assets/themes/rejalilaw/img/indexmap.png"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 text-center">
+                <h2>TESTIMONIALS</h2>
+                <br>
+            </div>
+
+            <div id="owl-demo" class="owl-carousel owl-theme">
+            {% for post in site.categories['testimonials'] %}
+                <div class="item">
+                    <blockquote>
+                        <h4>{{ post.source }}</h4>
+                        <p>{{ post.content }}</p>
+                        <footer>{{ post.author }}</footer>
+                    </blockquote>
+                </div>
+            {% endfor %}
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<div id="social">
+<br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <h2>SOCIAL</h2>
+                {% include themes/rejalilaw/social.html %}
+            </div>
+        </div>
+    </div>
 </div>
+
+
 
 
