@@ -122,15 +122,17 @@
 
         {% if page.path contains 'criminal' %}
 
+        {% elsif page.path contains 'immigration' %}
+
             {% else %}
+
+
 
             <div id="message">
 
                     <div id="inner-message" class="alert alert-warning text-center fade">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
-                        {% for post in site.categories['criminal'] %}
-                            View Our Updated Content For Criminal Law <a href="{{post.url}}" class="text-center">HERE <span class="glyphicon glyphicon-chevron-right"></span></a>
-                        {% endfor %}
+                            View Our Updated Content For : Criminal Law {% for post in site.categories['criminal'] %}<a href="{{post.url}}" class="text-center">HERE <span class="glyphicon glyphicon-chevron-right"></span></a>{% endfor %} & {% for post in site.categories['immigration'] %} Immigration <a href="{{post.url}}" class="text-center">HERE <span class="glyphicon glyphicon-chevron-right"></span></a> {% endfor %}
                     </div>
 
             </div>
