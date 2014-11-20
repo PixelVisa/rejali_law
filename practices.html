@@ -51,18 +51,23 @@ weight: 4
 
 <div id="1">
 	<div class="container">
-		<div claff="row">
+		<div class="row">
 			<h3>CRIMINAL LAW</h3>
 			<p>A criminal charge can affect you, your family, your freedom and your future. In fact, if convicted you may face possible jail time and fines, which may have an adverse affect on your finances and ability to gain employment.</p>
 
 			<p>Our firm will aggressively defend you and your constitutional rights in all levels of your criminal proceedings. We strongly believe in providing justice to our clients. We can defend you in all types of criminal cases ranging from DUI, misdemeanors and serious felony offenses. If you are facing criminal charges we encourage you to contact our office today for a FREE 30-minute consultation. The Rejali Law Firm is on your side.</p>
+		</div>
+		<div class="row">
+			{% for post in site.categories['criminal'] %}
+				<a href="{{post.url}}" class="btn btn-default btn-warning text-center">Read More<span class="glyphicon glyphicon-chevron-right"></span></a>
+			{% endfor %}
 		</div>
 	</div>
 </div>
 
 <div id="2">
 	<div class="container">
-		<div claff="row">
+		<div class="row">
 			<h3>IMMIGRATION</h3>
 			<p>At the Rejali Law Firm we offer affordable representation to individuals, organizations and businesses for all immigration matters. We represent foreign and domestic clients throughout San Diego, Southern California and various cities throughout all 50 states. We provide top-quality immigration services and representation at competitive prices.</p>
 
@@ -74,7 +79,7 @@ weight: 4
 
 <div id="4">
 	<div class="container">
-		<div claff="row">
+		<div class="row">
 			<h3>PERSONAL INJURY</h3>
 			<p>Having to deal with a personal injury matter can be a frustrating experience. At the Rejali Law Firm we understand that getting into a car accident can force you into unexpected health and economical burdens; not to mention the hassle of dealing with insurance companies, making repairs to your vehicle, taking time off work and visiting the doctor for medical treatment. However, personal injury reaches beyond car accidents.</p>
 
@@ -89,7 +94,7 @@ weight: 4
 
 <div id="4">
 	<div class="container">
-		<div claff="row">
+		<div class="row">
 			<h3>INTERNATIONAL LAW</h3>
 			<p>Our International Law practice assists foreign and domestic clients with a wide range of legal matters. At the Rejali Law Firm we understand that government actions increasingly affect individuals and their companies involved in global trade. We can help you manage the risks and maximize the opportunities associated with the increasing regulation of international trade in goods and services.</p>
 
@@ -100,7 +105,7 @@ weight: 4
 
 <div id="4">
 	<div class="container">
-		<div claff="row">
+		<div class="row">
 			<h3>TAX LAW</h3>
 			<p>Are you an individual, married, a business owner, an employee of a tax-exempt organization, real estate developer or investor? Perhaps you are a nonresident alien or about to become a United States resident and considering making an investment in United States assets? The Rejali Law Firm can show you how to reduce the incidence of United States income taxes and help you with all of your tax needs.</p>
 
@@ -113,7 +118,7 @@ weight: 4
 
 <div id="4">
 	<div class="container">
-		<div claff="row">
+		<div class="row">
 			<h3>ESTATE PLANNING</h3>
 			<p>If you have kids, own a home or investment property, operate a business, are getting ready to retire or looking to pass on or sell your business, you should have an Estate Plan in place to protect what you have worked so hard to acquire. Having a comprehensive Estate Plan will facilitate the passing of assets, minimize or eliminate estate taxes, and allow for the management of assets in the event of incompetency or other disability.</p>
 
@@ -128,7 +133,7 @@ weight: 4
 
 <div id="4">
 	<div class="container">
-		<div claff="row">
+		<div class="row">
 			<h3>BANKRUPTCY LAW</h3>
 			<p>Are you in debt or considering filing for bankruptcy? Are you worried about having your wages garnished? Do you cringe at the thought of having to deal with creditors? Are you on the verge of foreclosure? The Rejali Law Firm is San Diego’s premier law firm where we provide the best solutions for your financial problems.</p>
 

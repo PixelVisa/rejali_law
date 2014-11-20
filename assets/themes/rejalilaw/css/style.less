@@ -255,6 +255,30 @@ a {
 .call { font-size: 14px; }
 .call-mb { background: #606060; font-size: 14px;}
 
+#message {
+    position: fixed;
+    left: 0;
+    width: 100%;
+
+    @media(max-width: 992px) {
+      font-size: 14px;
+    }
+}
+#inner-message {
+    margin: 0 auto;
+}
+
+ .fade {
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear;
+    -moz-transition: opacity 0.15s linear;
+    -o-transition: opacity 0.15s linear;
+    transition: opacity 0.15s linear;
+}
+.fade.in {
+    opacity: 1;
+}
+
 /* PAGE SETTINGS
 -------------------------------------------------- */
 

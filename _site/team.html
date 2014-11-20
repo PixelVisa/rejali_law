@@ -69,8 +69,9 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div id="header-wrap" >
+        <div id="header-wrap" >
             <div class="heada grey-texture">
                 <div class="container">
                     <div class="pull-left hidden-xs">
@@ -109,10 +110,10 @@
 
             <div class="collapse navbar-collapse navbar-ex1-collapse navbar-right">
                 <ul class="nav navbar-nav">
+
                     
-                        
-                        
-                        
+                    
+                    
 
 
   
@@ -207,13 +208,26 @@
 
 
 
-                        
+
                 </ul>
             </div>
         </div>
-    </nav>
 
-    
+        
+
+            <div id="message">
+
+                    <div id="inner-message" class="alert alert-warning text-center fade">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        View Our Updated Content For Criminal Law <a href="practices.html" class="text-center">HERE <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+
+            </div>
+
+        
+
+    </nav>
+        
         
 <div id="wrapper">
   <section id="team-hero">
@@ -386,6 +400,17 @@
 
 <script src="/assets/themes/rejalilaw/resources/scripts/owl.carousel.js"></script>
 
+
+
+<script>
+function showAlert() {
+    $("#inner-message").addClass("in");
+}
+
+window.setTimeout(function () {
+    showAlert();
+}, 2000);
+</script>
 
 
 <script>
