@@ -128,7 +128,9 @@
 
                     <div id="inner-message" class="alert alert-warning text-center fade">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
-                        View Our Updated Content For Criminal Law <a href="practices.html" class="text-center">HERE <span class="glyphicon glyphicon-chevron-right"></span></a>
+                        {% for post in site.categories['criminal'] %}
+                            View Our Updated Content For Criminal Law <a href="{{post.url}}" class="text-center">HERE <span class="glyphicon glyphicon-chevron-right"></span></a>
+                        {% endfor %}
                     </div>
 
             </div>
