@@ -11,6 +11,8 @@
 
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{ site.keywords }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{ ASSET_PATH }}/img/favicon.ico">
 
@@ -18,9 +20,9 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Plugin CSS -->
-    <link href="{{ ASSET_PATH }}/css/owl.carousel.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/css/owl.theme.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/resources/rs-plugin/css/settings.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/owl.theme.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/resources/rs-plugin/css/settings.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
@@ -37,7 +39,7 @@
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
     <!-- Owl Carousel JS -->
-    <script src="{{ ASSET_PATH }}/resources/scripts/owl.carousel.js"></script>
+    <script src="{{ ASSET_PATH }}/resources/scripts/owl.carousel.min.js"></script>
 
     <meta property="og:title" content="Rejali Law Firm" />
     <meta property="og:image" content="http://imageshack.com/a/img540/3079/M5B6Ja.png" />
@@ -65,6 +67,7 @@
         ga('send', 'pageview');
 
         </script>
+        <!-- End Google Analytics -->
 
 
 </head>
@@ -190,7 +193,7 @@
     <script type="text/javascript" src="{{ ASSET_PATH }}/resources/scripts/jquery.themepunch.plugins.min.js"></script>
     <script type="text/javascript" src="{{ ASSET_PATH }}/resources/scripts/jquery.themepunch.revolution.min.js"></script>
 
-<script src="{{ ASSET_PATH}}/resources/scripts/owl.carousel.js"></script>
+<script src="{{ ASSET_PATH}}/resources/scripts/owl.carousel.min.js"></script>
 
 
 
