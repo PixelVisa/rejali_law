@@ -1010,6 +1010,35 @@ border-left: 10px solid transparent;
 
 #blog { margin-top: 60px;}
 
+.blog-wrap-index {
+  background: #FFF;
+  padding: 10px;
+    @media(max-width: 767px){
+      margin-bottom: 20px;
+    }
+    @media(min-width: 1200px){
+      h3 {height: 52px; }
+    }
+    @media(min-width: 992px) and (max-width:1200px){
+      h3 {height: 80px; }
+    }
+    @media(min-width: 767px) and (max-width:992px){
+      h3 {height: 104px; }
+    }
+
+    .blog-content-wrap-index{
+      @media(min-width: 1200px){
+        height: 300px;
+      }
+      @media(min-width: 992px) and (max-width:1200px){
+        height: 370px;
+      }
+      @media(min-width: 767px) and (max-width:992px){
+        height: 490px;
+      }
+    }
+}
+
 .tumblr_post.tumblr_photo_post {
 
   text-align: center;
