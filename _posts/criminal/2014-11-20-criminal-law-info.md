@@ -25,7 +25,7 @@ Even if a defendant is guilty, they can enter a plea of not guilty, if they thin
 
 At trial the jury will decide whether the defendant is guilty or not guilty based on the evidence presented. A defendant can also waive a jury trial and leave it up to a judge to decide guilt or innocence based on the evidence presented. The determination to go to trial or not should be consulted with your attorney.
 
-### What happens will happen at the sentencing?
+### What will happen at the sentencing?
 
 At the sentencing hearing, the defendant may have an opportunity to speak to the court and present mitigating information for the court to consider. These can include the defendant’s background, involvement with the community, family information, occupation, education, etc.
 The judge will consider all of the evidence presented and take into account any sentencing requirements. The judge will then enter a sentence for the defendant. If the crime is more serious, the defendant may face jail time.  However, a criminal sentence may involve alternative forms of sentencing such as: an order to pay a fine, get probation (formal or informal will depend on the crime committed), to give restitution to the victim, to undergo treatment for substance abuse or mental problems, to perform community service, or many other things. These alternatives can also be in addition to jail time.
