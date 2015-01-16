@@ -2,7 +2,7 @@
 layout: post
 title: San Diego Criminal Defense Strategy for Lack of Speedy Trial-Serna Motions 
 categories:	blogs
-tags : [immigration, passport, travel, citizenship]
+tags : [Criminal defense, San Diego criminal defense law, defense lawyer, san diego criminal lawyer, serna motion, san diego criminal law, drug crimes, theft crimes, sex crimes, burglary, robbery, larceny, theft, san diego theft lawyer, san diego robbery lawyer, san diego drug lawyer]
 ---
 
 A Serna motion is a defense tool, which would allow a defendant to have misdemeanor charges filed against him be dismissed. Under the United States Constitution a defendant has a 6th Amendment right to a speedy trial. This right is triggered at the time charges have been brought against a defendant. 
