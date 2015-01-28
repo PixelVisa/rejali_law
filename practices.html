@@ -125,6 +125,17 @@ weight: 4
 				</a>
 			</div>
 		{% endfor %}
+
+		{% for post in site.categories['injuryclaim'] %}
+			<div id="crim-link" class="col-sm-3 col-xs-6">
+				<a href="{{post.url}}">
+					<div class="injury-1">
+						<h3>Steps to take following an injury claim.</h3>
+					</div>
+				</a>
+			</div>
+		{% endfor %}
+
 		</div>
 	</div>
 </div>
