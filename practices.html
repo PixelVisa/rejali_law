@@ -88,8 +88,29 @@ weight: 4
 
 			<p>Our firm provides services in all areas of Immigration Law and Naturalization, including: E, H-1B, L, O, P, R, and other Non-Immigrant Visas, Labor Certification, RIR, Employment Based Visas, Finance K Visas, Family Petitions, Consular Processing, Adjustment of Status, Waivers, TPS, NACARA, and Deportation Defense. Contact the Rejali Law Firm today for a FREE 30-minute consultation to help alleviate or eliminate your immigration concerns.</p>
 		</div>
-
 		<div class="row">
+		{% for post in site.categories['immigration1'] %}
+			<div id="crim-link" class="col-sm-3 col-xs-6">
+				<a href="{{post.url}}">
+					<div class="imm-1">
+						<h3>Learn More About Immigration.</h3>
+					</div>
+				</a>
+			</div>
+		{% endfor %}
+
+		{% for post in site.categories['immigration'] %}
+			<div id="crim-link" class="col-sm-3 col-xs-6">
+				<a href="{{post.url}}">
+					<div class="imm-2">
+						<h3>Immigration Visa for Investors.</h3>
+					</div>
+				</a>
+			</div>
+		{% endfor %}
+		</div>
+
+		<!-- <div class="row">
 			{% for post in site.categories['immigration1'] %}
 				<p>To learn more about Immigration Procesees and other topics, click here: <a href="{{post.url}}" class="text-center">Read More<span class="glyphicon glyphicon-chevron-right"></span></a></p>
 			{% endfor %}
@@ -99,7 +120,7 @@ weight: 4
 			{% for post in site.categories['immigration'] %}
 				<p>To read about Immigration Visa for Investors, click here: <a href="{{post.url}}" class="">Read More<span class="glyphicon glyphicon-chevron-right"></span></a></p>
 			{% endfor %}
-		</div>
+		</div> -->
 
 	</div>
 </div>
@@ -131,6 +152,16 @@ weight: 4
 				<a href="{{post.url}}">
 					<div class="injury-1">
 						<h3>Steps to take following an injury claim.</h3>
+					</div>
+				</a>
+			</div>
+		{% endfor %}
+
+		{% for post in site.categories['motorcycleaccident'] %}
+			<div id="crim-link" class="col-sm-3 col-xs-6">
+				<a href="{{post.url}}">
+					<div class="motor-1">
+						<h3>Recovering from a motorcycle accident.</h3>
 					</div>
 				</a>
 			</div>
