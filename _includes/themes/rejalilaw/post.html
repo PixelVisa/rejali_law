@@ -3,14 +3,20 @@
     {% if page.image %}
     <div class="page-img">
         <div class="col-xs-12 text-center">
-            <img class="img-thumbnail" src="{{page.image}}" style="height: 300px;">
+            <div class="image">
+                <img class="img-thumbnail" src="{{page.image}}" style="height: 300px;">
+                <h2>{{page.title}}</h2>
+            </div>
+            <br>
         </div>
+        <br />
     </div>
-    <br>
-    {% endif %}
+    {% else %}
     <div class="page-header">
         <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
     </div>
+    <br>
+    {% endif %}
 
     <div class="row post-full">
         <div class="col-md-12">
