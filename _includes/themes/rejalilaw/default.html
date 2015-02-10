@@ -39,11 +39,17 @@
     <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
     <!-- Owl Carousel JS -->
+
     <script src="{{ ASSET_PATH }}/resources/scripts/owl.carousel.min.js"></script>
 
-    <meta property="og:title" content="Rejali Law Firm" />
-    <meta property="og:image" content="http://imageshack.com/a/img540/3079/M5B6Ja.png" />
-    <meta property="og:url" content="http://rejalilawfirm.com/" /> 
+     {% if page.url == "rejalilawfirm.com" %}
+        <meta property="og:title" content="Rejali Law Firm" />
+        <meta property="og:image" content="http://imageshack.com/a/img540/3079/M5B6Ja.png" />
+        <meta property="og:url" content="http://rejalilawfirm.com/" /> 
+
+    {% else %}
+        
+    {% endif %}
 
 
         <!--Start of Zopim Live Chat Script-->
@@ -70,6 +76,7 @@
         <!-- End Google Analytics -->
 
         <meta name="google-site-verification" content="iYE3VmJ5lvFXbtMYG8vlizYQ_rZQPUqOrYPx1sXzAa0" />
+    }
 
 
 </head>
