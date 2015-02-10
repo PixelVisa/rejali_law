@@ -1,5 +1,13 @@
 <section id="post">
 <div class="container">
+    {% if page.image %}
+    <div class="page-img">
+        <div class="col-xs-12 text-center">
+            <img class="img-thumbnail" src="{{page.image}}" style="height: 300px;">
+        </div>
+    </div>
+    <br>
+    {% endif %}
     <div class="page-header">
         <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
     </div>

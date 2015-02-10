@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Immigration
+image: http://imageshack.com/a/img540/3582/95N2IU.jpg
 categories:	immigration1
 tags : [visa, immigration]
 ---
