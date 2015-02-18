@@ -5,7 +5,7 @@ image: http://imageshack.com/a/img540/1497/k5G4eM.jpg
 categories:	criminal-dv
 tags : [San Diego criminal defense lawyer, san diego domestic violence lawyer, san diego criminal defense attorney, san diego iranian criminal defense lawyer, san diego iranian criminal defense attorney, domestic violence California, California domestic violence law]
 ---
-In the past few years, domestic violence has received increased attention from the law enforcement officers in San Diego, California. The law enforcement officers take domestic abuse cases very seriously. Even if there is a lack of evidence with regards to the domestic abuse, local prosecutors are likely to pursue the cases. If you are facing charges in San Diego or its surrounding areas, then you should consider hiring a San Diego domestic violence attorney in order to help protect your rights.
+In the past few years, domestic violence has received increased attention from the law enforcement officers in San Diego, California. The law enforcement officers take domestic abuse cases very seriously. Even if there is a lack of evidence with regards to the domestic abuse, local prosecutors are likely to pursue the cases. If you are facing charges in San Diego or its surrounding areas, then you should consider hiring a <a href="http://www.rejalilawfirm.com/omid.html">San Diego domestic violence attorney</a> in order to help protect your rights.
 
 The term “domestic violence” covers several different crimes. The following are the most common charges of “domestic abuse” or “domestic violence”:
 
@@ -19,3 +19,9 @@ The California Penal Code § 273.5 makes it a crime to willfully inflict any cor
 The California Penal Code § 368 makes it a crime to inflict emotional, financial, or even physical abuse on an elderly person. It also makes it a crime to neglect someone above 65 years of age. These charges can be pressed against even the child or the children of the elderly person.
 
 The consequences of a case of domestic abuse against a person can have grave consequences including a fine anywhere between $2000 to $6000 dollars, imprisonment in prison or the county jail from one to up to four years, or both, depending on the severity of the case. The state laws are constantly changing. Therefore, consider hiring the services of a domestic violence defense lawyer in San Diego or a San Diego criminal defense attorney, who will work with you to fight the charges against you. 
+
+For more information about the various defenses for your domestic violence case, and to schedule your free consultation, contact <a href="http://www.rejalilawfirm.com/contact.html">Omid Rejali  at the Rejali Law Firm. Mr. Rejali can be reached 24/7 toll free at 844-4REJALI or 619-887-4148
+
+If you are in danger, call 911, <a href="http://www.sandiego.gov/sandiegofamilyjusticecenter/" target="_blank">San Diego Domestic Violence Hotline</a> (888) DV-LINKS / (888) 385-4657 or the <a href="http://www.thehotline.org/" target="_blank">U.S. National Domestic Violence Hotline at (800) 799-7233 • TTY (800) 787-3224.
+
+<a href="http://www.thehotline.org/resources/statistics/" target="_blank">Domestic Violence Statistics</a>
