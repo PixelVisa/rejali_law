@@ -1569,6 +1569,8 @@ content:url(http://example.com/image.png);
       text-shadow: 0px 2px 5px #000
     }
   }
+
+
 .auto-1 {
     background: url('http://www.usnews.com/dims4/USNEWS/1cb1e44/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F35%2F21474633f708d53cf7367070ca5439%2F51047WideModern_CarAccident_121613.jpg') center center no-repeat;
     background-size: cover;
@@ -1678,6 +1680,28 @@ content:url(http://example.com/image.png);
 
   .imm-3 {
     background: url('http://imageshack.com/a/img913/5173/4s4oma.jpg') center center no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    &:hover {
+      border: 0px solid #dea653;
+      box-shadow: 0 0 20px #dea653;
+    }
+
+    
+
+    h3{
+      position: absolute;
+      top: 30%;
+      left: 10%;
+      color: #FFF;
+      text-shadow: 0px 2px 5px #000
+    }
+  }
+
+  .imm-4 {
+    background: url('http://imageshack.com/a/img537/856/gEDmZ8.jpg') center center no-repeat;
     background-size: cover;
     height: 200px;
     width: 100%;
